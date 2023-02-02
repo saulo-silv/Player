@@ -1,8 +1,39 @@
 #root {
   max-width: 1280px;
-  margin: 0 auto;
+  margin: 100px;
   padding: 2rem;
-  text-align: center;
-  background-color: cyan;
+  
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 30px;
+}
+.App{
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+h1 {
+  left: calc(50% - 40px);
+  color: #f6a6b6;
+  text-align: center;
+}
+h2 {
+  left: calc(50% - 40px);
+  color: #f6a6b6;
+  text-align: center;
+}
+button{
+  color: #f6a6b6;
+  margin: 10px;
+  text-align: center;
+}

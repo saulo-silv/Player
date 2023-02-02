@@ -1,6 +1,7 @@
 import { useRef, useState, useEffect } from "react"
 import napster from "../services/napster.js"
 
+
 function Player({ song }) {
 
     const [isPlaying, setIsPlaying] = useState(false)

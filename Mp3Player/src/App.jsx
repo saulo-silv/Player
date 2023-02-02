@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import Player from "./components/Player"
-
 import './App.css'
 
 function App() {
@@ -11,6 +10,7 @@ function App() {
       <h1>MP3 Player</h1>
       <Player song={"Isto é uma música"} />
     </div>
+    
   )
 }
 

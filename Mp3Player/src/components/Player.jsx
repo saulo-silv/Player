@@ -25,7 +25,7 @@ function Player({ song }) {
 
     const loadSong = () => {
         music.current.src = tracks[currentIndex]?.previewURL
-        pause()
+        
         play()
     }
 
@@ -52,16 +52,16 @@ function Player({ song }) {
     return (
         <div>
             {isPlaying ? (
-                <h2>Está tocando a música: {tracks[currentIndex].name}</h2>
+                <h2> {tracks[currentIndex].name}</h2>
             ) : (
-                <h2>A música está parada</h2>
+                <h2></h2>
             )}
             <audio ref={music} src={tracks[currentIndex]?.previewURL || "https://listen.hs.llnwd.net/g2/prvw/4/2/4/9/8/911189424.mp3"} ></audio>
-            <button>Anterior</button>
+            <button>⏮</button>
             <button onClick={ isPlaying ? pause : play}>
-                { isPlaying ? "pause" : "play"}
+                { isPlaying ? "⏸" : "▶"}
             </button>
-            <button onClick={ next }>Próximo</button>
+            <button onClick={ next }>⏭</button>
         </div>
     )
 }

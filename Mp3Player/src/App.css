@@ -1,26 +1,20 @@
-#root {
-  max-width: 1280px;
-  margin: 100px;
-  padding: 2rem;
-  
-}
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-size: 30px;
-}
+
+
 .App{
-  background-color: #282c34;
-  min-height: 100vh;
+  margin: 0;
+  padding: 0; 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
+  background-color: rgb(34, 34, 34);
+  color: #ddd;
+  text-align: center;
+  
 }
+
 
 h1 {
   left: calc(50% - 40px);
@@ -28,12 +22,24 @@ h1 {
   text-align: center;
 }
 h2 {
+  background-color:azure;
+  text-shadow: red -2px 0, cyan 2px 0;
+  border-radius:  14px ;
+  padding: 10px;
+  
+
   left: calc(50% - 40px);
-  color: #f6a6b6;
+  color:#282c34;
   text-align: center;
 }
 button{
-  color: #f6a6b6;
-  margin: 10px;
+  background-color: #208f9e;
+  box-shadow: 1px 1px azure;
+  color: #fff;
+  padding: 7px;
+  margin: 16px;
+  text-decoration: none;
   text-align: center;
+  cursor: pointer;
+  border-radius: 14px;
 }

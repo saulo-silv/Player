@@ -7,7 +7,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>MP3 Player</h1>
+      <h1></h1>
       <Player song={"Isto é uma música"} />
     </div>
     
